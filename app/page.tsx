@@ -1,20 +1,21 @@
-import { Welcome } from '../components/Welcome/Welcome';
 import { ColorSchemeToggle } from '../components/ColorSchemeToggle/ColorSchemeToggle';
 import { Header } from '@/components/Header/Header';
 import { Hero } from '@/components/Hero/Hero';
 import { CardsCarousel } from '@/components/Highlights/HighLights';
 import { Footer } from '@/components/Footer/Footer';
-import { Features } from '@/components/Features/Features';
+import { CallToAction } from '@/components/CallToAction/CallToAction';
+import { LocationContact } from '@/components/LocationContact/LocationContact';
 
 export default function HomePage() {
   return (
     <>
-    <Header/>
+      <Header/>
       <Hero />
-      <Features/>
+      <CallToAction/>
       <CardsCarousel/>
-      <Footer/>
-      <ColorSchemeToggle />
+      <LocationContact/>
+      {/* <Footer/>
+      <ColorSchemeToggle /> */}
     </>
   );
 }
