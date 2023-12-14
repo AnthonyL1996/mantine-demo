@@ -9,7 +9,7 @@ import { LocationContact } from '@/components/LocationContact/LocationContact';
 export default function HomePage() {
   return (
     <>
-      <Header/>
+      {/* <Header/> */}
       <Hero />
       <CallToAction/>
       <CardsCarousel/>

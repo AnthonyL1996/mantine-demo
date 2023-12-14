@@ -1,6 +1,6 @@
 .wrapper {
-    padding-top: calc(var(--mantine-spacing-xl) * 4);
-    padding-bottom: calc(var(--mantine-spacing-xl) * 4);
+    padding-top: calc(var(--mantine-spacing-xl));
+    padding-bottom: calc(var(--mantine-spacing-xl));
   }
   
   .title {
@@ -19,7 +19,7 @@
   
   .description {
     text-align: center;
-  
+    padding-bottom: calc(var(--mantine-spacing-xl));
     @media (max-width: $mantine-breakpoint-sm) {
       text-align: left;
     }

@@ -10,6 +10,10 @@
   }
 }
 
+.wrapper {
+  padding: calc(var(--mantine-spacing-xl));
+}
+
 .image {
   position: absolute;
   inset: 0;

@@ -4,7 +4,7 @@
     padding-bottom: rem(130px);
     overflow: hidden;
 
-    min-height: 800px;
+    min-height: 100vh;
   
     @media (max-width: $mantine-breakpoint-xs) {
       padding-top: rem(80px);
@@ -95,4 +95,19 @@
     }
   }
 
+  .logo {
+    position: absolute;
+    top: 15%; /* Adjust this value to position the logo slightly higher than the middle */
+    left: 50%;
+    transform: translate(-50%, -15%);
+    max-width: 60vh; /* Adjust the size of the logo as needed */
+
+    @media (max-width: $mantine-breakpoint-xs) {
+      position: absolute;
+      top: 15%; /* Adjust this value to position the logo slightly higher than the middle */
+      left: 50%;
+      transform: translate(-50%, -15%);
+      max-width: 40vh; /* Adjust the size of the logo as needed */
+    }
+  }
   

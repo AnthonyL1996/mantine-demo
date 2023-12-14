@@ -3,6 +3,7 @@ import '@mantine/carousel/styles.css';
 import React from 'react';
 import { MantineProvider, ColorSchemeScript } from '@mantine/core';
 import { theme } from '../theme';
+import classes from './layout.module.css';
 
 export const metadata = {
   title: 'Mantine Next.js template',
@@ -20,7 +21,7 @@ export default function RootLayout({ children }: { children: any }) {
           content="minimum-scale=1, initial-scale=1, width=device-width, user-scalable=no"
         />
       </head>
-      <body>
+      <body className={classes.body}>
         <MantineProvider theme={theme}>{children}</MantineProvider>
       </body>
     </html>

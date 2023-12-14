@@ -1,17 +1,18 @@
-import { Container, Title, Button, Group } from '@mantine/core';
+import { Container, Title, Button, Group, Text } from '@mantine/core';
 import classes from './CallToAction.module.css';
 import { IconCalendarClock, IconShoppingBag } from '@tabler/icons-react';
 
 export function CallToAction() {
     return (
         <Container className={classes.wrapper}>
-        <Title className={classes.title}>Flavors That Tell a Story – Taste the Rich Heritage of Cantonese Delights</Title>
+        <Title className={classes.title}>Taste the Rich Heritage of Cantonese Delights</Title>
+        <Text className={classes.description}>Delight in our curated selection of Cantonese favorites, where classic recipes meet contemporary tastes. Indulge in our signature dishes, each offering a unique fusion of rich heritage and modern culinary artistry.</Text>
         <Group justify="center">
-            <Button size="lg" leftSection={<IconCalendarClock size={32} />} variant="default">
-                Reservation
+            <Button variant="filled" color="black" size="xl" radius="xl" leftSection={<IconCalendarClock size={32} />}>
+                Dine-in
             </Button>
-            <Button size="lg" leftSection={<IconShoppingBag size={32}  />} variant="default">
-                Order Now
+            <Button variant="white" color="black" size="xl" radius="xl" leftSection={<IconShoppingBag size={32}  />}>
+                Take-out
             </Button>
         </Group>
       </Container>
